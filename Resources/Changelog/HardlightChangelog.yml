@@ -3728,3 +3728,9 @@ Entries:
       message: Fixed Kitsune using the wrong emote sound for squeak.
   id: 399
   time: '2026-05-08T06:45:13.0000000+00:00'
+- author: NotLivyathan
+  changes:
+    - type: Fix
+      message: Directional wall ambient occlusion now makes sense.
+  id: 400
+  time: '2026-05-08T06:45:51.0000000+00:00'
