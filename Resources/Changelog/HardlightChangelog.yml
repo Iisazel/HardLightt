@@ -3876,3 +3876,15 @@ Entries:
       message: 'temporarily removed the Anomaly job role '
   id: 415
   time: '2026-05-13T09:29:56.0000000+00:00'
+- author: fenndragon
+  changes:
+    - type: Add
+      message: Adds a new lethal security turret that targets contraband carriers
+    - type: Add
+      message: 'Added the first Livewire checkpoint to Core station  '
+    - type: Tweak
+      message: CDets no longer fire on command or security
+    - type: Tweak
+      message: CDets now go offline during Red alert or higher
+  id: 416
+  time: '2026-05-13T10:10:27.0000000+00:00'
