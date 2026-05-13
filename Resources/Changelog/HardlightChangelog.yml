@@ -3888,3 +3888,9 @@ Entries:
       message: CDets now go offline during Red alert or higher
   id: 416
   time: '2026-05-13T10:10:27.0000000+00:00'
+- author: re-silvered
+  changes:
+    - type: Fix
+      message: Fixed context menu incorrect display
+  id: 417
+  time: '2026-05-13T23:13:35.0000000+00:00'
