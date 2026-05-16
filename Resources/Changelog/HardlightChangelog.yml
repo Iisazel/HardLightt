@@ -3954,3 +3954,9 @@ Entries:
       message: Made it so that old redundant rescue beacons are deleted on roundend
   id: 423
   time: '2026-05-16T08:08:58.0000000+00:00'
+- author: re-silvered
+  changes:
+    - type: Fix
+      message: Fixed expeditions refusing to leave if attempted to end too early.
+  id: 424
+  time: '2026-05-16T08:09:20.0000000+00:00'
