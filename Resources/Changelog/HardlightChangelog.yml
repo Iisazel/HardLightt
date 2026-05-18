@@ -4020,3 +4020,15 @@ Entries:
       message: Added stripper poles.
   id: 432
   time: '2026-05-18T06:40:43.0000000+00:00'
+- author: biteymcstabface
+  changes:
+    - type: Tweak
+      message: >-
+        Reverts shadekin regeneration trait values to those proposed in initial
+        PR
+    - type: Fix
+      message: >-
+        Makes shadekin regeneration traits mutually exclusive with all other
+        regen traits, not just platelets
+  id: 433
+  time: '2026-05-18T18:13:56.0000000+00:00'
