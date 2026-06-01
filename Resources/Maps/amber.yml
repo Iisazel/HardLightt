@@ -4,8 +4,8 @@ meta:
   engineVersion: 274.0.0
   forkId: ""
   forkVersion: ""
-  time: 05/25/2026 01:38:03
-  entityCount: 24466
+  time: 05/30/2026 15:38:53
+  entityCount: 24470
 maps:
 - 1
 grids:
@@ -14774,6 +14774,19 @@ entities:
           Quantity: 1
     - type: ContainedSolution
       containerName: hvcable
+  - uid: 19993
+    components:
+    - type: MetaData
+      name: solution - vat_oil
+    - type: Transform
+      parent: 16238
+    - type: Solution
+      solution:
+        maxVol: 100
+        name: vat_oil
+        reagents: []
+    - type: ContainedSolution
+      containerName: vat_oil
   - uid: 20090
     components:
     - type: MetaData
@@ -23783,6 +23796,8 @@ entities:
     - type: InstantAction
       originalIconColor: '#FFFFFFFF'
   - uid: 31
+    mapInit: true
+    paused: true
     components:
     - type: Transform
       parent: 30
@@ -38016,7 +38031,7 @@ entities:
   - uid: 2090
     components:
     - type: Transform
-      pos: -16.012146,-48.421722
+      pos: -16.460573,-48.464657
       parent: 2
   - uid: 2091
     components:
@@ -74356,12 +74371,6 @@ entities:
     - type: Transform
       pos: 18.439327,1.646283
       parent: 2
-  - uid: 9120
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 27.426058,10.683699
-      parent: 2
   - uid: 9121
     components:
     - type: Transform
@@ -74518,6 +74527,14 @@ entities:
     - type: Transform
       pos: 34.5,-50.5
       parent: 2
+  - uid: 20212
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 27.5,11.5
+      parent: 2
+    - type: Physics
+      bodyType: KinematicController
 - proto: ChairRitual
   entities:
   - uid: 9146
@@ -78595,7 +78612,7 @@ entities:
   - uid: 9334
     components:
     - type: Transform
-      pos: -7.544902,17.78299
+      pos: -6.4807577,19.817616
       parent: 2
     - type: SolutionContainerManager
       solutions: null
@@ -89171,7 +89188,7 @@ entities:
       desc: The Detective's undercover drink of choice. He never could stomach gin...
       name: Manhattan glass
     - type: Transform
-      pos: -7.242668,17.584934
+      pos: -6.4510717,17.570766
       parent: 2
     - type: SolutionContainerManager
       solutions: null
@@ -89641,7 +89658,7 @@ entities:
   - uid: 10879
     components:
     - type: Transform
-      pos: -6.7736864,17.657902
+      pos: -6.6229467,17.586391
       parent: 2
     - type: SolutionContainerManager
       solutions: null
@@ -89994,7 +90011,7 @@ entities:
   - uid: 10894
     components:
     - type: Transform
-      pos: -6.961279,17.855957
+      pos: -6.7635717,17.789516
       parent: 2
     - type: SolutionContainerManager
       solutions: null
@@ -90071,7 +90088,7 @@ entities:
   - uid: 10899
     components:
     - type: Transform
-      pos: -6.5131397,17.855957
+      pos: -6.2948217,17.820766
       parent: 2
     - type: SolutionContainerManager
       solutions: null
@@ -94384,12 +94401,7 @@ entities:
   - uid: 11353
     components:
     - type: Transform
-      pos: -15.489538,-48.309826
-      parent: 2
-  - uid: 11354
-    components:
-    - type: Transform
-      pos: -15.2811,-48.58085
+      pos: -16.273073,-48.495907
       parent: 2
   - uid: 11355
     components:
@@ -94410,6 +94422,11 @@ entities:
     components:
     - type: Transform
       pos: -27.376095,3.9398522
+      parent: 2
+  - uid: 20335
+    components:
+    - type: Transform
+      pos: -16.398073,-48.277157
       parent: 2
 - proto: FoodBanana
   entities:
@@ -96135,9 +96152,13 @@ entities:
   - uid: 11548
     components:
     - type: Transform
+      anchored: False
       rot: 3.141592653589793 rad
       pos: -3.5,-44.5
       parent: 2
+    - type: Physics
+      canCollide: True
+      bodyType: Dynamic
     - type: AtmosPipeColor
       color: '#0335FCFF'
   - uid: 11549
@@ -103794,9 +103815,13 @@ entities:
   - uid: 12559
     components:
     - type: Transform
+      anchored: False
       rot: -1.5707963267948966 rad
       pos: -34.5,-37.5
       parent: 2
+    - type: Physics
+      canCollide: True
+      bodyType: Dynamic
     - type: AtmosPipeColor
       color: '#0335FCFF'
   - uid: 12560
@@ -103962,9 +103987,13 @@ entities:
   - uid: 12580
     components:
     - type: Transform
+      anchored: False
       rot: -1.5707963267948966 rad
       pos: -35.5,-37.5
       parent: 2
+    - type: Physics
+      canCollide: True
+      bodyType: Dynamic
     - type: AtmosPipeColor
       color: '#0335FCFF'
   - uid: 12581
@@ -126984,12 +127013,12 @@ entities:
   - uid: 15994
     components:
     - type: Transform
-      pos: -18.202019,-50.432945
+      pos: -18.52664,-50.551888
       parent: 2
   - uid: 15995
     components:
     - type: Transform
-      pos: -21.216204,10.476481
+      pos: -20.733759,10.507105
       parent: 2
 - proto: HandheldGeneticAnalyzer
   entities:
@@ -128941,6 +128970,14 @@ entities:
       parent: 2
     - type: Fixtures
       fixtures: {}
+  - uid: 24467
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: -40.5,-6.5
+      parent: 2
+    - type: Fixtures
+      fixtures: {}
 - proto: IntercomElectronics
   entities:
   - uid: 16216
@@ -129196,13 +129233,35 @@ entities:
     - type: Transform
       pos: -8.5,-30.5
       parent: 2
-- proto: KitchenElectricGrill
+- proto: KitchenDeepFryer
   entities:
-  - uid: 16237
+  - uid: 16238
     components:
     - type: Transform
-      pos: -7.5,-33.5
+      pos: -7.5,-30.5
       parent: 2
+    - type: SolutionContainerManager
+      solutions: null
+      containers:
+      - vat_oil
+    - type: ContainerContainer
+      containers:
+        vat_entities: !type:Container
+          showEnts: False
+          occludes: True
+          ents: []
+        machine_board: !type:Container
+          showEnts: False
+          occludes: True
+          ents: []
+        machine_parts: !type:Container
+          showEnts: False
+          occludes: True
+          ents: []
+        solution@vat_oil: !type:ContainerSlot
+          showEnts: False
+          occludes: True
+          ent: 19993
 - proto: KitchenElectricRange
   entities:
   - uid: 19931
@@ -129217,10 +129276,10 @@ entities:
       parent: 2
 - proto: KitchenMicrowave
   entities:
-  - uid: 16238
+  - uid: 16237
     components:
     - type: Transform
-      pos: -7.5,-30.5
+      pos: -7.5,-33.5
       parent: 2
   - uid: 16240
     components:
@@ -129381,7 +129440,7 @@ entities:
   - uid: 30
     components:
     - type: Transform
-      pos: 28.348837,11.900307
+      pos: 28.329556,11.694763
       parent: 2
     - type: HandheldLight
       toggleActionEntity: 31
@@ -131271,7 +131330,7 @@ entities:
   - uid: 16408
     components:
     - type: Transform
-      pos: -7.5553236,17.54324
+      pos: -7.50107,17.57782
       parent: 2
 - proto: MachineAnomalyGenerator
   entities:
@@ -131860,10 +131919,10 @@ entities:
       parent: 2
 - proto: MaintenanceInsulsSpawner
   entities:
-  - uid: 16505
+  - uid: 11354
     components:
     - type: Transform
-      pos: -53.5,-23.5
+      pos: -54.5,-23.5
       parent: 2
   - uid: 16507
     components:
@@ -132416,7 +132475,7 @@ entities:
   - uid: 16578
     components:
     - type: Transform
-      pos: -18.531181,-50.325314
+      pos: -18.542265,-50.333138
       parent: 2
   - uid: 16579
     components:
@@ -135283,13 +135342,6 @@ entities:
     components:
     - type: Transform
       pos: -47.5,-26.5
-      parent: 2
-- proto: PottedPlantRD
-  entities:
-  - uid: 16914
-    components:
-    - type: Transform
-      pos: 28.5,-35.5
       parent: 2
 - proto: PowerCellHigh
   entities:
@@ -138481,6 +138533,49 @@ entities:
       containers:
         solution@injector: !type:ContainerSlot
           ent: 24251
+- proto: PrinterDoc
+  entities:
+  - uid: 9120
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 27.5,10.5
+      parent: 2
+  - uid: 16914
+    components:
+    - type: Transform
+      pos: -25.5,-50.5
+      parent: 2
+  - uid: 24468
+    components:
+    - type: Transform
+      pos: -8.5,-25.5
+      parent: 2
+  - uid: 24469
+    components:
+    - type: Transform
+      pos: -53.5,-23.5
+      parent: 2
+  - uid: 24470
+    components:
+    - type: Transform
+      pos: -21.5,10.5
+      parent: 2
+  - uid: 24471
+    components:
+    - type: Transform
+      pos: -7.5,17.5
+      parent: 2
+  - uid: 24473
+    components:
+    - type: Transform
+      pos: 28.5,-35.5
+      parent: 2
+  - uid: 24474
+    components:
+    - type: Transform
+      pos: -15.5,-48.5
+      parent: 2
 - proto: Protolathe
   entities:
   - uid: 17446
@@ -146041,7 +146136,7 @@ entities:
   - uid: 18849
     components:
     - type: Transform
-      pos: -17.983162,-50.297432
+      pos: -18.12039,-50.380013
       parent: 2
 - proto: RiotBulletShield
   entities:
@@ -156896,11 +156991,6 @@ entities:
     - type: Transform
       pos: -8.5,-30.5
       parent: 2
-  - uid: 19993
-    components:
-    - type: Transform
-      pos: -7.5,-30.5
-      parent: 2
   - uid: 19994
     components:
     - type: Transform
@@ -158021,12 +158111,6 @@ entities:
     - type: Transform
       pos: -6.5,17.5
       parent: 2
-  - uid: 20212
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: -7.5,17.5
-      parent: 2
 - proto: TableFancyRed
   entities:
   - uid: 20213
@@ -158388,6 +158472,11 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 16.5,-52.5
       parent: 2
+  - uid: 16505
+    components:
+    - type: Transform
+      pos: 28.5,11.5
+      parent: 2
   - uid: 20269
     components:
     - type: Transform
@@ -158738,11 +158827,6 @@ entities:
       rot: -1.5707963267948966 rad
       pos: -2.5,-44.5
       parent: 2
-  - uid: 20335
-    components:
-    - type: Transform
-      pos: -53.5,-23.5
-      parent: 2
   - uid: 20336
     components:
     - type: Transform
@@ -158755,21 +158839,10 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 41.5,-10.5
       parent: 2
-  - uid: 20338
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 28.5,11.5
-      parent: 2
   - uid: 20339
     components:
     - type: Transform
       pos: -16.5,-48.5
-      parent: 2
-  - uid: 20340
-    components:
-    - type: Transform
-      pos: -15.5,-48.5
       parent: 2
   - uid: 20341
     components:
@@ -158865,12 +158938,6 @@ entities:
     components:
     - type: Transform
       pos: -4.5,-44.5
-      parent: 2
-  - uid: 20358
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: -21.5,10.5
       parent: 2
   - uid: 20359
     components:
@@ -159647,7 +159714,7 @@ entities:
   - uid: 20456
     components:
     - type: Transform
-      pos: -53.583843,-23.123
+      pos: -52.893787,-23.259052
       parent: 2
 - proto: ToyFigurineEngineer
   entities:

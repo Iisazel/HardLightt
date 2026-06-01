@@ -4,8 +4,8 @@ meta:
   engineVersion: 274.0.0
   forkId: ""
   forkVersion: ""
-  time: 05/25/2026 15:17:15
-  entityCount: 21786
+  time: 05/30/2026 17:15:31
+  entityCount: 21797
 maps:
 - 1
 grids:
@@ -11979,6 +11979,19 @@ entities:
           Quantity: 5000
     - type: ContainedSolution
       containerName: tank
+  - uid: 21793
+    components:
+    - type: MetaData
+      name: solution - food
+    - type: Transform
+      parent: 21792
+    - type: Solution
+      solution:
+        maxVol: 50
+        name: food
+        reagents: []
+    - type: ContainedSolution
+      containerName: food
 - proto: ActionToggleInternals
   entities:
   - uid: 12
@@ -14620,7 +14633,7 @@ entities:
       pos: -21.5,45.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -62709.92
+      secondsUntilStateChange: -63122.5
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -15033,7 +15046,7 @@ entities:
       pos: 35.5,24.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -26198.363
+      secondsUntilStateChange: -26610.941
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -15465,7 +15478,7 @@ entities:
       pos: -23.5,-12.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -149024.34
+      secondsUntilStateChange: -149436.92
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -15477,7 +15490,7 @@ entities:
       pos: -23.5,-13.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -149214.73
+      secondsUntilStateChange: -149627.31
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -15510,7 +15523,7 @@ entities:
       pos: -23.5,-1.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -140853.42
+      secondsUntilStateChange: -141266
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -15601,7 +15614,7 @@ entities:
       pos: 21.5,-13.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -130243.89
+      secondsUntilStateChange: -130656.47
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -15647,7 +15660,7 @@ entities:
       pos: 23.5,-5.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -100214.586
+      secondsUntilStateChange: -100627.164
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -15861,7 +15874,7 @@ entities:
       pos: 20.5,17.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -99762.52
+      secondsUntilStateChange: -100175.1
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -16637,7 +16650,7 @@ entities:
       pos: -23.5,39.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -57187.664
+      secondsUntilStateChange: -57600.242
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -77797,6 +77810,21 @@ entities:
     - type: Transform
       pos: 17.425566,-19.377577
       parent: 2
+- proto: FoodBowlBig
+  entities:
+  - uid: 21792
+    components:
+    - type: Transform
+      pos: -28.349398,51.638786
+      parent: 2
+    - type: SolutionContainerManager
+      solutions: null
+      containers:
+      - food
+    - type: ContainerContainer
+      containers:
+        solution@food: !type:ContainerSlot
+          ent: 21793
 - proto: FoodBoxDonut
   entities:
   - uid: 9949
@@ -122691,6 +122719,14 @@ entities:
       parent: 2
     - type: Fixtures
       fixtures: {}
+  - uid: 15060
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: -32.5,50.5
+      parent: 2
+    - type: Fixtures
+      fixtures: {}
 - proto: IntercomEngineering
   entities:
   - uid: 21609
@@ -122730,14 +122766,6 @@ entities:
       fixtures: {}
 - proto: IntercomSecurity
   entities:
-  - uid: 15060
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -30.5,50.5
-      parent: 2
-    - type: Fixtures
-      fixtures: {}
   - uid: 21607
     components:
     - type: Transform
@@ -131426,6 +131454,59 @@ entities:
       containers:
         solution@injector: !type:ContainerSlot
           ent: 9225
+- proto: PrinterDoc
+  entities:
+  - uid: 21787
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: -3.5,9.5
+      parent: 2
+  - uid: 21788
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 7.5,1.5
+      parent: 2
+  - uid: 21789
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: -41.5,27.5
+      parent: 2
+  - uid: 21790
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: -38.5,41.5
+      parent: 2
+  - uid: 21794
+    components:
+    - type: Transform
+      pos: 6.5,32.5
+      parent: 2
+  - uid: 21795
+    components:
+    - type: Transform
+      pos: 25.5,14.5
+      parent: 2
+  - uid: 21796
+    components:
+    - type: Transform
+      pos: 13.5,42.5
+      parent: 2
+  - uid: 21797
+    components:
+    - type: Transform
+      pos: 15.5,0.5
+      parent: 2
+- proto: PrinterDocFlatpack
+  entities:
+  - uid: 21791
+    components:
+    - type: Transform
+      pos: -26.46054,42.450233
+      parent: 2
 - proto: PrizeCounter
   entities:
   - uid: 16109
