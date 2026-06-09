@@ -2,14 +2,15 @@ using Content.Shared.Storage;
 using Robust.Shared.Audio;
 using Robust.Shared.GameStates;
 using Robust.Shared.Prototypes;
+using Content.Shared.Animals.Systems;
 
-namespace Content.Server.Animals.Components;
+namespace Content.Shared.Animals.Components; // HL: Moved this to Shared so the client can use it for verb drawing.
 
 /// <summary>
 ///     This component handles egg laying for the Egg layer trait
 /// </summary>
 
-[RegisterComponent]
+[RegisterComponent, NetworkedComponent, AutoGenerateComponentState(fieldDeltas: true)]
 public sealed partial class LewdEggLayingComponent : Component
 {
     [DataField]
@@ -81,7 +82,7 @@ public sealed partial class LewdEggLayingComponent : Component
     /// <summary>
     /// The number of eggs in your belly
     /// </summary>
-    [ViewVariables(VVAccess.ReadWrite)]
+    [DataField, AutoNetworkedField]
     public float eggs = 0;
 
     /// <summary>
@@ -93,15 +94,6 @@ public sealed partial class LewdEggLayingComponent : Component
     /// The number of eggs produced since last flavor text
     /// </summary>
     public bool Temporary = false;
-
-    public void addEggs(float amt)
-    {
-        eggs = Math.Clamp(eggs + amt, 0, MaxEggs);
-        if(amt > 0)
-        {
-            eggsFlavorAccum += amt;
-        }
-    }
     public bool hasEggs()
     {
         return eggs >= 1.0f;
@@ -116,7 +108,7 @@ public sealed partial class LewdEggLayingComponent : Component
     }
     public bool doFlavor()
     {
-        if(eggsFlavorAccum >= FlavorFreq)
+        if (eggsFlavorAccum >= FlavorFreq)
         {
             eggsFlavorAccum -= FlavorFreq;
             return true;

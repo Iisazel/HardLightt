@@ -1,18 +1,22 @@
 using System.Threading;
+using Robust.Shared.GameStates;
 
-namespace Content.Server.Carrying
+namespace Content.Shared.Carrying // HL: Moved this to Shared so the client can use it for verb drawing.
 {
-    [RegisterComponent]
+    [RegisterComponent, NetworkedComponent, AutoGenerateComponentState(fieldDeltas: true)] // HL: Added Networked and AutoGenerate so we can push the fields we need to the client for verb drawing.
     public sealed partial class CarriableComponent : Component
     {
         /// <summary>
         ///     Number of free hands required
         ///     to carry the entity
         /// </summary>
-        [DataField]
+        [DataField, AutoNetworkedField]
         public int FreeHandsRequired = 2;
 
         public CancellationTokenSource? CancelToken;
+
+        [DataField, AutoNetworkedField] // HL: We can't sync the TokenSource to the client, so we keep a tracking bool that we can sync with the client for verb drawing.
+        public bool HasCancelToken = false;
 
         /// <summary>
         ///     The base duration (In Seconds) of how long it should take to pick up this entity

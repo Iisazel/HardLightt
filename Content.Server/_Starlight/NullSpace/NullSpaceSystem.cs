@@ -13,6 +13,7 @@ using Content.Shared._Starlight.NullSpace;
 using Content.Shared.Movement.Pulling.Systems;
 using Content.Shared.Movement.Pulling.Components;
 using Content.Server.Atmos.EntitySystems;
+using Content.Shared.Carrying; // HL: Moved the Carrying Component to Shared for client-side verb drawing
 using Content.Server.Carrying;
 using Content.Server.Body.Systems;
 using Content.Server.Hands.Systems;

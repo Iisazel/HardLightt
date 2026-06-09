@@ -1,15 +1,13 @@
 using Content.Shared.FixedPoint;
 using Content.Shared.Chemistry.Components;
 using Content.Shared.Chemistry.Reagent;
-using Content.Shared.FloofStation.Traits;
-using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom.Prototype.List;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom;
 using Robust.Shared.GameStates;
 
-namespace Content.Server.FloofStation.Traits;
+namespace Content.Shared.FloofStation.Traits.Events.Components; // HL: Moved this to Shared so the client can use it for verb drawing.
 
-[RegisterComponent, Access(typeof(LewdTraitSystem))]
+[RegisterComponent, NetworkedComponent, Access(typeof(SharedLewdTraitSystem))]
 public sealed partial class PissProducerComponent : Component
 {
     [DataField("solutionname")]
