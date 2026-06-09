@@ -4536,3 +4536,9 @@ Entries:
         palette change (For full list check the PR).
   id: 480
   time: '2026-06-09T10:44:47.0000000+00:00'
+- author: Illumos
+  changes:
+    - type: Add
+      message: Pacifists can now throw things without hurting people.
+  id: 481
+  time: '2026-06-09T10:45:17.0000000+00:00'
