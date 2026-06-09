@@ -4542,3 +4542,9 @@ Entries:
       message: Pacifists can now throw things without hurting people.
   id: 481
   time: '2026-06-09T10:45:17.0000000+00:00'
+- author: Typheus
+  changes:
+    - type: Fix
+      message: More entities, including scurrets, are now pacified at CC.
+  id: 482
+  time: '2026-06-09T10:51:11.0000000+00:00'
