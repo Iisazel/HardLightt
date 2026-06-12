@@ -4618,3 +4618,9 @@ Entries:
       message: 'Breaching Hammer can now be used to pry. '
   id: 491
   time: '2026-06-09T20:19:53.0000000+00:00'
+- author: Fardoche0
+  changes:
+    - type: Fix
+      message: Fixed the options to weave and spin with the Bionic Spinarette trait.
+  id: 492
+  time: '2026-06-12T22:11:18.0000000+00:00'
