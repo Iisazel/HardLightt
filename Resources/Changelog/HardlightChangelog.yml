@@ -4700,3 +4700,9 @@ Entries:
   changes: []
   id: 501
   time: '2026-06-12T22:18:46.0000000+00:00'
+- author: Illumos
+  changes:
+    - type: Add
+      message: FTL-less shuttle console, for use by mappers.
+  id: 502
+  time: '2026-06-12T22:20:38.0000000+00:00'
