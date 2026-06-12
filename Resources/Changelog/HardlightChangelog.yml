@@ -4624,3 +4624,11 @@ Entries:
       message: Fixed the options to weave and spin with the Bionic Spinarette trait.
   id: 492
   time: '2026-06-12T22:11:18.0000000+00:00'
+- author: Typheus
+  changes:
+    - type: Add
+      message: AI Shunt Receiver
+    - type: Tweak
+      message: AI Remote Devices and Shunt Control now requires AI Shunt Receiver
+  id: 493
+  time: '2026-06-12T22:12:36.0000000+00:00'
