@@ -4770,3 +4770,20 @@ Entries:
       message: Ship AIs have comms restricted from Command and Security
   id: 511
   time: '2026-06-15T23:34:19.0000000+00:00'
+- author: IngvarJackal
+  changes:
+    - type: Add
+      message: >-
+        Late-round "Quiet before storm" event that brings an eerie lull followed
+        by a department-themed crisis.
+    - type: Tweak
+      message: >-
+        Station events now ramp up in danger over the shift instead of firing at
+        random.
+    - type: Tweak
+      message: >-
+        Major threats (nuke ops, xenoborgs, zombie outbreaks) no longer stack
+        with other big events, and Central Command's threat detection will hint
+        at their presence after 60 minutes.
+  id: 512
+  time: '2026-06-15T23:35:14.0000000+00:00'
