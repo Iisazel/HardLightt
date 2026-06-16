@@ -350,37 +350,37 @@
   - type: ItemSlots
     slots:
       weapon1:
-        insertVerbText: weapon-rack-verb-insert-weapon-01
-        ejectVerbText: weapon-rack-verb-eject-weapon-01
-        name: weapon-rack-name-stored-weapon-slot
+        insertVerbText: suit-storage-verb-insert-suit-01
+        ejectVerbText: suit-storage-verb-eject-suit-01
+        name: suit-storage-name-stored-suit-slot
         whitelist:
           components:
           - PressureProtection
       weapon2:
-        insertVerbText: weapon-rack-verb-insert-weapon-02
-        ejectVerbText: weapon-rack-verb-eject-weapon-02
-        name: weapon-rack-name-stored-weapon-slot
+        insertVerbText: suit-storage-verb-insert-suit-02
+        ejectVerbText: suit-storage-verb-eject-suit-02
+        name: suit-storage-name-stored-suit-slot
         whitelist:
           components:
           - PressureProtection
       weapon3:
-        insertVerbText: weapon-rack-verb-insert-weapon-03
-        ejectVerbText: weapon-rack-verb-eject-weapon-03
-        name: weapon-rack-name-stored-weapon-slot
+        insertVerbText: suit-storage-verb-insert-suit-03
+        ejectVerbText: suit-storage-verb-eject-suit-03
+        name: suit-storage-name-stored-suit-slot
         whitelist:
           components:
           - PressureProtection
       weapon4:
-        insertVerbText: weapon-rack-verb-insert-weapon-04
-        ejectVerbText: weapon-rack-verb-eject-weapon-04
-        name: weapon-rack-name-stored-weapon-slot
+        insertVerbText: suit-storage-verb-insert-suit-04
+        ejectVerbText: suit-storage-verb-eject-suit-04
+        name: suit-storage-name-stored-suit-slot
         whitelist:
           components:
           - PressureProtection
       weapon5:
-        insertVerbText: weapon-rack-verb-insert-weapon-05
-        ejectVerbText: weapon-rack-verb-eject-weapon-05
-        name: weapon-rack-name-stored-weapon-slot
+        insertVerbText: suit-storage-verb-insert-suit-05
+        ejectVerbText: suit-storage-verb-eject-suit-05
+        name: suit-storage-name-stored-suit-slot
         whitelist:
           components:
           - PressureProtection
