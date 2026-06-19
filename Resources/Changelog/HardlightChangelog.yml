@@ -4957,3 +4957,11 @@ Entries:
         access.
   id: 532
   time: '2026-06-19T10:04:23.0000000+00:00'
+- author: re-silvered
+  changes:
+    - type: Add
+      message: >-
+        Added arachnophobia mode! No longer will you have to see the spiders if
+        you don't want to.
+  id: 533
+  time: '2026-06-19T10:05:34.0000000+00:00'
