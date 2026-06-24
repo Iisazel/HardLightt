@@ -5223,3 +5223,11 @@ Entries:
       message: Diona, Vox and Vulpkanins now have unique sneeze sounds.
   id: 567
   time: '2026-06-24T05:04:18.0000000+00:00'
+- author: re-silvered
+  changes:
+    - type: Tweak
+      message: Reenabled hostile and friendly slime mob ghostroles
+    - type: Fix
+      message: Fixed Smile the slime not being able to be taken over via ghost role
+  id: 568
+  time: '2026-06-24T05:05:00.0000000+00:00'
