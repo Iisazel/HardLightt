@@ -5243,3 +5243,9 @@ Entries:
       message: Updated ship prices so they cost more to buy than sell.
   id: 570
   time: '2026-06-24T05:08:16.0000000+00:00'
+- author: re-silvered
+  changes:
+    - type: Add
+      message: Added spectral locators to the backpack items loadout options
+  id: 571
+  time: '2026-06-24T05:14:23.0000000+00:00'
